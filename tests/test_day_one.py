@@ -1,4 +1,9 @@
-from solutions.DayOneSolution import DayOneSolution
+from solutions.DayOneSolution import PartOne, PartTwo
 
-def test_solution():
-    assert DayOneSolution().run([199, 200, 208, 210, 200, 207, 240, 269, 260, 263]) == 7
+input = [199, 200, 208, 210, 200, 207, 240, 269, 260, 263]
+
+def test_part_one():
+    assert PartOne().run(input) == 7
+
+def test_part_two():
+    assert PartTwo().run(input) == 5
