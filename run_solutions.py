@@ -1,5 +1,4 @@
-from inputs import DayOne
-from solutions import DayOneSolution
+from solutions import DayOne, DayTwo
 
 def run(m):
     def execute(s):
@@ -8,9 +7,12 @@ def run(m):
         result = s().solve()
         print(result)
         print("=" * len(header))
-    if (m.PartOne):
+        
+    members = dir(m)
+    if ("PartOne" in members):
         execute(m.PartOne)
-    if (m.PartTwo):
+    if ("PartTwo" in members):
         execute(m.PartTwo)
 
-run(DayOneSolution)
+run(DayOne)
+run(DayTwo)
