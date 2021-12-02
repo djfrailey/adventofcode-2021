@@ -1,4 +1,5 @@
 from inputs import DayOne
+
 class PartOne:
     def run(self, input: list[int]) -> int:
         num_increases: int = 0
